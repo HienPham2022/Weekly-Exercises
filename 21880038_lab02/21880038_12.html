@@ -4,12 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đăng ký tài khoản gmail</title>
+    <link rel="stylesheet" href="css/stylesheet_12.css">
 </head>
 <body>
-    <font color="red">
-        wewewq
-    </font>
+    <div class="main">
+        <h1>Create your Google Account</h1>
+        <div class="Container">
+            <div class="left-content">
+                <h2>One account is all you need</h2>
+                <p>One free account gets you into everything Google</p>
+                <div class="icons">
+                    <img src="images/icons.png" alt="">
+                </div>
+                <h2>Take it all with you</h2>
+                <p>Switch between devices,and pick up whether you left off</p>
+                <img src="images/laptop.png" alt="picture_lap">
+            </div>
+            <div class="right-content">
+                <form class="sign-up-box" method="post">                    
+                    <div class="input-name">
+                        <lable for="fname" class="name" >Name</lable>
+                        <input type="text" id="fname" name="fname" placeholder="First name" >
+                        <input type="text" id="lname" name="lname" placeholder="Last name" >
+                    </div>                    
+                    <label for="username">Choose your username</label>                    
+                    <input type="text" id="username" maxlength="24" name="gmailaddress"  class="elements user_name pop_up">                    
+                    <label for="pword">Create a password</label>                    
+                    <input type="text" id="pword" name="pword" class="elements pop_up">
+                    <label for="cf_pw">Confirm your password</label>                    
+                    <input type="text" id="cf_pw" name="cfPassword" class="elements">   
+
+                    <div class="BDay">
+                        <label for="">Birthday</label>
+                        <select name="elements month" class="month">
+                            <option value="month" selected disabled hidden  >Month</option>
+                            <option value="">January</option>
+                            <option value="">February</option>
+                            <option value="">March</option>
+                            <option value="">April</option>
+                            <option value="">May</option>
+                            <option value="">June</option>
+                            <option value="">July</option>
+                            <option value="">August</option>                           
+                            <option value="">October</option>
+                            <option value="">November</option>
+                            <option value="">December</option>                            
+                        </select>
+                        <input type="text" class="elements" id="day" name="day" placeholder="Day">
+                        <input type="text" class="elements" id="year" name="year" placeholder="Year">
+                    </div>
+                    <label for="">Gender</label>
+                    <select name="Gender" class="elements gender">
+                        <option value="i am" selected disabled hidden>I am ...</option>
+                        <option value="female" class="opt">Nữ</option>
+                        <option value="male" class="opt">Nam</option>
+                        <option value="other">Other</option>
+                        <option value="notsay">Rather not say</option>
+                    </select>
+                    <label for="">Mobile phone</label>                    
+                    <input type="text" class="elements mobile pop_up" name="mobile" value="+84">
+                    <label for="email" class="name">Your current email address</label>                   
+                    <input type="text" class="elements pop_up" id="email" name="email">                  
+                    <label for="">Location</label>
+                    <select name="location" class="elements location">
+                        <option value="vietnamese" class="opt" selected>VietNam(Việt Nam)</option>
+                        <option value="" class="opt">Laos</option>
+                        <option value="" class="opt">Thailand</option>
+                        <option value="" class="opt">Korea</option>
+                        <option value="" class="opt">USA</option>
+                    </select>
+                    <div class="bt-sb">
+                        <input type="submit" value="Next" id="submitbutton" class="s-button">
+                    </div>
+                    
+                </form>
+                <div class="learn">
+                    <a href="https://support.google.com/accounts/answer/1733224?hl=en">Learn More</a>
+                    about why we ask for this information.
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
     
 </body>
 </html>
